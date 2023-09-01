@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/cadastro.css">
+</head>
+<body>
+  <div id="card">
+    <div id="card-content">
+      <div id="card-title">
+        <h2>cadastrar</h2>
+        <div class="underline-title"></div>
+      </div>
+      <form action="/usuarios/criar" method="post" class="form">
+        <label for="user-name" style="padding-top:13px">
+            &nbsp;nome
+          </label>
+        <input id="user-name" class="form-content" type="name" name="name" required />
+        <div class="form-border"></div>
+        <label for="user-password" style="padding-top:22px">&nbsp;idade
+          </label>
+        <input id="user-password" class="form-content" type="text" name="age" required />
+        <div class="form-border"></div>
+        <input id="submit-btn" type="submit" name="submit" value="CADASTRAR" />
+      </form>
+    </div>
+  </div>
+</body>
+</html>

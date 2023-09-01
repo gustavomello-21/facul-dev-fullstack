@@ -1,0 +1,9 @@
+atividade Dev full stack
+
+[X] criar um projeto com express
+[X] adicionar nodemon ao projeto e utilizar a porta 5000 para rodar o projeto
+[ ] criar duas páginas HTML com o conteúdo de sua escolha. Uma página pode ser a home e a outra pode ser uma página de cadastro
+[ ] adicione css às páginas e mude pelo menos a cor de fundo e a fonte e as cores de fonte
+[X] utilize pelo menos uma rota de POST recebendo informações de corpo da requisição
+[X] utilize pelo menos uma rota de get recebendo informações dos parâmetros da requisição
+[ ] conecte a página home com a página de cadastro

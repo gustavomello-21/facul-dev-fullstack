@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/cadastro.css">
+</head>
+
+<body>
+  <div id="card">
+    <div id="card-content">
+      <div id="card-title">
+        <h2>buscar aluno</h2>
+        <div class="underline-title"></div>
+      </div>
+      <form id="search-form" class="form">
+        <label for="user-id" style="padding-top: 22px">Digite um ID</label>
+        <input id="user-id" class="form-content" type="text" name="id" required />
+        <div class="form-border"></div>
+        <input id="submit-btn" type="submit" name="submit" value="BUSCAR" />
+      </form>
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script>
+    const searchForm = document.getElementById('search-form');
+    const resultDiv = document.getElementById('result');
+
+    searchForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const userId = document.getElementById('user-id').value;
+      const response = await fetch(`/usuarios/${userId}`);
+      const data = await response.text();
+
+      resultDiv.innerHTML = data;
+    });
+  </script>
+</body>
+
+</html>
